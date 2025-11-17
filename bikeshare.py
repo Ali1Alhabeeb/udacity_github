@@ -2,15 +2,15 @@ import time
 import pandas as pd
 import numpy as np
 
+# Data files mapping
 CITY_DATA = { 
     'chicago': 'chicago.csv',
     'new york city': 'new_york_city.csv',
     'washington': 'washington.csv'
 }
-
+# Valid months and days
 months = ['january', 'february', 'march', 'april', 'may', 'june']
 valid_days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
-
 
 def get_filters():
     """
@@ -264,8 +264,7 @@ def main():
         df = load_data(city, month, day)
 
         if df.empty:
-            print("No rows match your filters.")
-            print("Try different month/day or a different city.")
+            print("No rows match your filters. Try different month/day or a different city.")
         else:
             time_stats(df)
             station_stats(df)
@@ -275,7 +274,7 @@ def main():
 
         restart = input('\nWould you like to restart? Enter yes or no.\n').strip().lower()
         if restart != 'yes':
-            print("Goodbye ")
+            print("Goodbye!")
             break
 
 
