@@ -261,6 +261,9 @@ def main():
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
+        print(f"\nYou selected:\nCity: {city.title()}\nMonth: {month}\nDay: {day}")
+        print('-' * 40)
+
 
         if df.empty:
             print("No rows match your filters. Try different month/day or a different city.")
