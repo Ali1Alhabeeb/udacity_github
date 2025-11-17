@@ -11,6 +11,7 @@ CITY_DATA = {
 months = ['january', 'february', 'march', 'april', 'may', 'june']
 valid_days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
 
+
 def get_filters():
     """
     Ask user to specify city, month, and day.
@@ -263,7 +264,8 @@ def main():
         df = load_data(city, month, day)
 
         if df.empty:
-            print("No rows match your filters. Try different month/day or a different city.")
+            print("No rows match your filters.")
+            print("Try different month/day or a different city.")
         else:
             time_stats(df)
             station_stats(df)
@@ -273,7 +275,7 @@ def main():
 
         restart = input('\nWould you like to restart? Enter yes or no.\n').strip().lower()
         if restart != 'yes':
-            print("Goodbye!")
+            print("Goodbye ")
             break
 
 
