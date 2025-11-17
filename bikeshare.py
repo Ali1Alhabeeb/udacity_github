@@ -50,6 +50,9 @@ def load_data(city, month, day):
     """
     Load data for selected city and filter by month/day if needed.
     """
+    print("Loading data, please wait...")
+    time.sleep(0.5)
+
     try:
         df = pd.read_csv(CITY_DATA[city])
     except FileNotFoundError:
