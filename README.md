@@ -8,7 +8,7 @@
 
 ## 📘 Project Description
 
-This project analyzes bikeshare data from multiple U.S. cities using Python. It uses user input to filter datasets by city, month, and day of the week, and then computes descriptive statistics to help users better understand patterns in bikeshare usage.
+This project analyzes bikeshare data from 3 U.S. cities (chigaco, new york, washington) using Python. It uses user input to filter datasets by city, month, and day of the week, and then computes descriptive statistics to help users better understand patterns in bikeshare usage.
 
 ---
 
