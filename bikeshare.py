@@ -2,12 +2,13 @@ import time
 import pandas as pd
 import numpy as np
 
+# Data files mapping
 CITY_DATA = { 
     'chicago': 'chicago.csv',
     'new york city': 'new_york_city.csv',
     'washington': 'washington.csv'
 }
-
+# Valid months and days
 months = ['january', 'february', 'march', 'april', 'may', 'june']
 valid_days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
 
